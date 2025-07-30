@@ -6,11 +6,11 @@ A real-time chat application with a **RAG-powered AI assistant**. Chat with othe
 
 ## ⚡ Features
 
-- 🔁 Real-time messaging via WebSockets
-- 🤖 AI Assistant powered by Retrieval-Augmented Generation (RAG)
-- 📄 Upload custom documents (e.g. PDFs) for contextual AI answers
-- 🚀 CI/CD with GitHub Actions & Docker
-- ☁️ Deployable to Vercel, Fly.io, Railway
+- 🔁 Real-time messaging via WebSockets  
+- 🤖 AI Assistant powered by Retrieval-Augmented Generation (RAG)  
+- 📄 Upload custom documents (e.g. PDFs) for contextual AI answers  
+- 🚀 CI/CD with GitHub Actions & Docker  
+- ☁️ Deployable to Vercel, Fly.io, Railway  
 
 ---
 
@@ -38,46 +38,59 @@ A real-time chat application with a **RAG-powered AI assistant**. Chat with othe
 ├── assistant-api/       # FastAPI + LangChain assistant
 ├── .github/workflows/   # GitHub Actions CI/CD
 └── docker-compose.yml   # Multi-service local setup
+```
+
+---
 
 ## 🚀 Getting Started
-Clone the repository
-Bash
 
+### 1. Clone the repository
+
+```bash
 git clone https://github.com/your-username/cortex-chat.git
 cd cortex-chat
-Add environment variables
-Create .env files for each service (examples are provided in each folder).
+```
 
-Run locally with Docker Compose
-Bash
+### 2. Add environment variables
 
+Create `.env` files for each service (examples are provided in each folder).
+
+### 3. Run locally with Docker Compose
+
+```bash
 docker-compose up --build
-Access the app
-Frontend: http://localhost:3000
+```
 
-Backend: http://localhost:5000
+### 4. Access the app
 
-Assistant API: http://localhost:8000
+- Frontend: [http://localhost:3000](http://localhost:3000)  
+- Backend: [http://localhost:5000](http://localhost:5000)  
+- Assistant API: [http://localhost:8000](http://localhost:8000)  
+
+---
 
 ## 📌 Roadmap Summary
-✅ Chat UI with login & threading
 
-✅ WebSocket backend with PostgreSQL persistence
+- ✅ Chat UI with login & threading  
+- ✅ WebSocket backend with PostgreSQL persistence  
+- ✅ RAG-based assistant with file upload + Pinecone/FAISS  
+- ✅ Dockerized deployment & GitHub Actions for CI/CD  
 
-✅ RAG-based assistant with file upload + Pinecone/FAISS
-
-✅ Dockerized deployment & GitHub Actions for CI/CD
+---
 
 ## 🛡️ Prerequisites
-Node.js, Python 3.10+, Docker
 
-OpenAI API Key (or Llama3 setup)
+- Node.js  
+- Python 3.10+  
+- Docker  
+- OpenAI API Key *(or Llama3 setup)*  
+- Pinecone/FAISS setup for vector DB  
+- Basic knowledge of LangChain & FastAPI  
 
-Pinecone/FAISS setup for vector DB
-
-Basic knowledge of LangChain & FastAPI
+---
 
 ## 📜 License
+
 MIT License. Feel free to use, modify, and contribute!
 
 Made with ❤️ by Sarvesh Waghmare
